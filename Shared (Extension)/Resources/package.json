@@ -1,0 +1,23 @@
+{
+  "name": "gitleet-1",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Automatically Integrate your code with LeetCode and GitHub",
+  "scripts": {
+    "setup": "npm i",
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,css,html}",
+    "format-test": "prettier --check **/*.{js,jsx,ts,tsx,css,html}",
+    "lint": "eslint . --fix --ignore-pattern 'src/js/static/jquery-3.3.1.min.js' --ignore-pattern 'src/js/static/semantic-2.4.1.min.js'",
+    "lint-test": "eslint . --color --ignore-pattern 'src/js/static/jquery-3.3.1.min.js' --ignore-pattern 'src/js/static/semantic-2.4.1.min.js'"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "prettier": "^3.7.4"
+  }
+}
